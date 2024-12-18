@@ -20,7 +20,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full h-screen bg-gray-900">
       {/* Hero Content */}
-      <div className="absolute mt-40 md:mt-64 flex flex-col items-center justify-center text-center text-white z-20 px-4">
+      <div className="absolute top-20 sm:top-40 md:top-60 flex flex-col items-center justify-center text-center text-white z-20 px-4">
         <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4 animate__animated animate__fadeIn">
           Welcome to Our Website
         </h1>
@@ -33,7 +33,7 @@ const HeroSection = () => {
       </div>
 
       {/* Carousel */}
-      <div className="w-full h-full overflow-hidden">
+      <div className="w-full h-full overflow-hidden" style={{ height: "calc(100vh - 100px)" }}>
         <Slider {...settings}>
           <div className="relative">
             <img
