@@ -1,45 +1,39 @@
 import React from "react";
-import Slider from "react-slick"; // Import Slider from react-slick
-import "slick-carousel/slick/slick.css"; // Import Slick CSS
-import "slick-carousel/slick/slick-theme.css"; // Import Slick Theme CSS
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HeroSection = () => {
- 
-
-
-  // Slick Carousel Settings
   const settings = {
-    dots: true, // Show dots for navigation
-    infinite: true, // Infinite loop
-    speed: 500, // Speed of slide transition
-    autoplay: true, // Auto slide
-    autoplaySpeed: 2500, // Time interval between auto slides (3 seconds)
-    slidesToShow: 1, // Show one slide at a time
-    slidesToScroll: 1, // Scroll one slide at a time
-    draggable: true, // Enable dragging by mouse
-    pauseOnHover: true, // Pause autoplay on hover
-    arrows: false, // Remove default arrows
-
-    
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    pauseOnHover: true,
+    arrows: false,
   };
 
   return (
     <section className="relative w-full h-screen bg-gray-900">
       {/* Hero Content */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate__animated animate__fadeIn">
+      <div className="absolute mt-40 md:mt-64 flex flex-col items-center justify-center text-center text-white z-20 px-4">
+        <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4 animate__animated animate__fadeIn">
           Welcome to Our Website
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl font-light mb-8 animate__animated animate__fadeIn animate__delay-1s">
+        <p className="text-sm sm:text-lg md:text-xl lg:text-2xl font-light mb-4 sm:mb-8 animate__animated animate__fadeIn animate__delay-1s">
           Discover amazing products and services.
         </p>
-        <button className="bg-red-500 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-700 transition-colors duration-300">
+        <button className="bg-red-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-lg hover:bg-blue-700 transition-colors duration-300">
           Shop Now
         </button>
       </div>
 
       {/* Carousel */}
-      <div className="w-full  max-w-full overflow-hidden" style={{ height: "calc(100vh - 100px)" }}>
+      <div className="w-full h-full overflow-hidden">
         <Slider {...settings}>
           <div className="relative">
             <img
@@ -70,14 +64,9 @@ const HeroSection = () => {
 
       {/* Dots for Carousel Navigation */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30">
-        <div className="slick-dots">
-          {/* Default dots will be rendered here */}
-        </div>
+        <div className="slick-dots"></div>
       </div>
     </section>
-
-    
-    
   );
 };
 
