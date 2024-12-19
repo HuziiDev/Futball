@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection';
+import CardContainer from './components/CardContainer';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
   <>
     <Navbar/>
     <HeroSection/>
+    <CardContainer/>
   </>
   )
 }

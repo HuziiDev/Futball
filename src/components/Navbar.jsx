@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="relative">
       {/* Navbar */}
       <nav className="bg-white p-4 flex items-center justify-between shadow-md">
-        <div className="text-2xl font-bold">Company Logo</div>
+        <div className="text-lg sm:text-2xl font-bold">Company Logo</div>
 
         {/* Links (visible on large screens) */}
         <div className="hidden md:flex space-x-6">
@@ -30,17 +30,17 @@ const Navbar = () => {
         <div className="flex items-center space-x-4 gap-2">
           {/* Search Icon */}
           <button onClick={toggleSearch} className="text-gray-800">
-            <FaSearch className="text-2xl" />
+            <FaSearch className="text-lg sm:text-2xl" />
           </button>
 
           {/* Profile Icon */}
           <button onClick={toggleProfile} className="text-gray-800">
-            <FaUser className="text-2xl"  />
+            <FaUser className="text-lg sm:text-2xl"  />
           </button>
 
           {/* Cart Icon */}
           <button className="text-gray-800">
-            <FaCartPlus className="text-2xl"  />
+            <FaCartPlus className="text-lg sm:text-2xl"  />
           </button>
 
           {/* Hamburger Menu (visible on small screens) */}
@@ -48,7 +48,7 @@ const Navbar = () => {
             onClick={toggleSidebar}
             className="md:hidden text-gray-800"
           >
-            <FaBars  className="text-2xl"  />
+            <FaBars  className="text-lg sm:text-2xl"  />
           </button>
         </div>
       </nav>

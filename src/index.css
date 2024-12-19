@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Your desired color */
+    height: 100%; /* Ensure it covers the full height */
+    background-color: black;
+  }
+  
