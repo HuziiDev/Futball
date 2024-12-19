@@ -18,7 +18,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-scree">
+    <section className="relative w-full ">
       {/* Hero Content */}
       <div className="absolute top-20 sm:top-40 md:top-60 flex flex-col items-center justify-center text-center text-white z-20 px-4">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4 animate__animated animate__fadeIn">
@@ -33,7 +33,7 @@ const HeroSection = () => {
       </div>
 
       {/* Carousel */}
-      <div className="w-full h-full overflow-hidden" style={{ height: "calc(100vh - 80px)" }}>
+      <div className="w-full h-[30vh] sm:h-[60vh] md:h-[75vh] lg:h-[90vh]  overflow-hidden " >
         <Slider {...settings}>
           <div className="relative">
             <img
@@ -53,7 +53,7 @@ const HeroSection = () => {
           </div>
           <div className="relative">
             <img
-              src="https://via.placeholder.com/1920x1080?text=Image+3"
+              src="https://images.news18.com/ibnlive/uploads/2023/10/edenhazardretirementreason-2023-10-4d94f31adfe216e6110d7d7eb8a89337.jpg"
               alt="Carousel Image 3"
               className="w-full h-full object-cover"
             />
