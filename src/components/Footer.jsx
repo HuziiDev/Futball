@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         {/* Get in Touch */}
         <div>
           <h3 className="text-xl font-bold mb-4">Get in Touch</h3>
-          <p className="text-sm mb-4">
+          <p className="text-gray-300 text-sm mb-4">
             Subscribe to our newsletter to stay updated with our latest news and offers.
           </p>
           <div className="relative">
@@ -27,22 +28,22 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-4">Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#home" className="text-gray-300 transition">
+              <a href="#home" className="text-gray-300 transition hover:text-white">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="text-gray-300 transition">
+              <a href="#about" className="text-gray-300 transition hover:text-white">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#services" className="text-gray-300 transition">
+              <a href="#services" className="text-gray-300 transition hover:text-white">
                 Services
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-gray-300 transition">
+              <a href="#contact" className="text-gray-300 transition hover:text-white">
                 Contact
               </a>
             </li>
@@ -54,17 +55,17 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-4">Useful Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#privacy" className="text-gray-300 transition">
+              <a href="#privacy" className="text-gray-300 hover:text-white transition ">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#terms" className="text-gray-300 transition">
+              <a href="#terms" className="text-gray-300  hover:text-white  transition ">
                 Terms of Service
               </a>
             </li>
             <li>
-              <a href="#faq" className="text-gray-300 transition">
+              <a href="#faq" className="text-gray-300  hover:text-white transition ">
                 FAQ
               </a>
             </li>
@@ -73,30 +74,22 @@ const Footer = () => {
 
         {/* Social Media */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-          <ul className="flex space-x-4">
-            <li>
-              <a href="#facebook" className="hover:text-white transition">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="#twitter" className="hover:text-white transition">
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href="#instagram" className="hover:text-white transition">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="#linkedin" className="hover:text-white transition">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
+  <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
+  <div className="flex space-x-4">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transform transition duration-300 hover:scale-110">
+      <FaFacebook size={24} />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transform transition duration-300 hover:scale-110">
+      <FaTwitter size={24} />
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transform transition duration-300 hover:scale-110">
+      <FaInstagram size={24} />
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transform transition duration-300 hover:scale-110">
+      <FaLinkedin size={24} />
+    </a>
+  </div>
+</div>
       </div>
 
       {/* Bottom Divider */}
