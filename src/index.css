@@ -10,5 +10,12 @@ html, body {
     background-color: #f0f0f0; /* Your desired color */
     height: 100%; /* Ensure it covers the full height */
     background-color: black;
+
   }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   
