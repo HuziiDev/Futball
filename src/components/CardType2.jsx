@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardType2 = ({ image, title }) => {
   return (
-    <div className="relative w-full bg-gray-100 overflow-hidden rounded-md shadow-lg">
+    <div className="relative w-full bg-gray-100 overflow-hidden rounded-md shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
     {/* Image */}
     <img
       src={image}

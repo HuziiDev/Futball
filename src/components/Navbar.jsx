@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaSearch, FaUser, FaCartPlus, FaBars, FaTimes } from "react-icons/fa"; // Import icons
 import ProfileSidebar from './ProfileSidebar';
 import SearchSidebar from './SearchSidebar';
@@ -20,7 +21,7 @@ const Navbar = () => {
 
         {/* Links (visible on large screens) */}
         <div className="hidden md:flex space-x-6">
-          <a href="/" className="text-gray-800 hover:text-blue-600">Home</a>
+          <Link to='/' className="text-gray-800 hover:text-blue-600">Home</Link>
           <a href="/shop" className="text-gray-800 hover:text-blue-600">Shop</a>
           <a href="/contact" className="text-gray-800 hover:text-blue-600">Contact Us</a>
           <a href="/about" className="text-gray-800 hover:text-blue-600">About Us</a>
