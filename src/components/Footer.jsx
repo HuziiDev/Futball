@@ -17,7 +17,7 @@ const Footer = () => {
               placeholder="Your Email"
               className="w-full p-3  border-neon-green rounded-full focus:outline-none bg-black border-2 border-white"
             />
-            <button className="absolute right-1 top-1 bg-neon-green  bg-gray-700 py-2 px-4 rounded-full hover:bg-white hover:text-neon-green transition duration-300">
+            <button className="absolute right-1 top-1 bg-neon-green  bg-gray-700 py-2 px-4 rounded-full hover:bg-white hover:text-gray-700 transition duration-300">
               Submit
             </button>
           </div>

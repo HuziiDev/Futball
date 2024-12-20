@@ -30,7 +30,7 @@ const CustomerReview = () => {
   ];
 
   return (
-    <section className="py-8 bg-gray-50">
+    <section className="py-8 bg-gray-400">
       {/* Section Title */}
       <h2 className="text-2xl sm:text-4xl font-bold text-center mb-8">
         Customer Reviews

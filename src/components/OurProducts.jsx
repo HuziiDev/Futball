@@ -15,9 +15,9 @@ const OurProducts = () => {
   ];
 
   return (
-    <section className="w-full py-8 bg-orange-300 rounded-md">
+    <section className="w-full py-8 bg-slate-300 rounded-md">
       {/* Heading */}
-      <h2 className="text-2xl text-white sm:text-4xl font-bold text-center mb-8">
+      <h2 className="text-2xl text-gray-700 sm:text-4xl font-bold text-center mb-8">
         Our Products
       </h2>
 
