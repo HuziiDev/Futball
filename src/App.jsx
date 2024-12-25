@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SignUp from './pages/SignUp';
+import Shop from './pages/Shop'
 
 import { ToastContainer, toast } from 'react-toastify';
 import Login from './pages/Login'
@@ -23,6 +24,7 @@ function App() {
    <Route  path='/' element={<Home/>}/>
    <Route  path='/signup' element={<SignUp/>}/>
    <Route path='/login' element={<Login/>} />
+   <Route path='/shop' element={<Shop/>}/>
    
    </Routes>
    <Footer/>
