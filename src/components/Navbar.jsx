@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaUser, FaCartPlus, FaBars, FaTimes } from "react-icons/fa"; // Import icons
-import ProfileSidebar from './ProfileSidebar';
+
 import SearchSidebar from './SearchSidebar';
 
 const Navbar = () => {
-  const [isProfileOpen, setIsProfileOpen] = useState(false);
+
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // For Hamburger toggle
 
-  const toggleProfile = () => setIsProfileOpen(!isProfileOpen);
+  
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen); // Hamburger toggle
 
@@ -35,9 +35,9 @@ const Navbar = () => {
           </button>
 
           {/* Profile Icon */}
-          <button onClick={toggleProfile} className="text-gray-800">
+        <Link to='/signup' className="text-gray-800">
             <FaUser className="text-lg sm:text-2xl"  />
-          </button>
+            </Link>
 
           {/* Cart Icon */}
           <button className="text-gray-800">
@@ -72,8 +72,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Profile Sidebar */}
-      <ProfileSidebar isProfileOpen={isProfileOpen} toggleProfile={toggleProfile} />
+    
 
       {/* Search Sidebar */}
       <SearchSidebar isSearchOpen={isSearchOpen} toggleSearch={toggleSearch} />
